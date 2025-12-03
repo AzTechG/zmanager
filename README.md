@@ -9,7 +9,7 @@ However this tool was made in an educational context and all names included are 
 
 ## How to install Zmanager 
 
-/!\ As this is only an highschool project, it was made in an educational purpose, you should never use Zmanager in a professional context. /!\
+/!\ As this is only an highschool project, it was made in an educational purpose, you should never use Zmanager in a professional context. 
 If you are not a Zoo employee here is how to install Zmanager : 
 
 1. Setting up a database
