@@ -51,20 +51,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'zmanager_project.urls'
 
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
-]
+TEMPLATES = [0]['DIRS'] = [BASE_DIR / "static"]
 
 WSGI_APPLICATION = 'zmanager_project.wsgi.application'
 

@@ -4,8 +4,8 @@ This is a repository containing the files of the Zmanager project.
 
 ## Description
 
-Zmanager is a simple tool using Django, SQL and HTML to create a Zoo park managing website. You can add users, administrators, animals and track medical files.
-However this tool was made in an educational context and all names included are fictional and not intended to be used by any professional.
+Zmanager is a simple tool using Django, SQL and HTML as a zoo management website. You can add users, administrators, animals and track medical files.
+However this tool was made in an educational context and is not intended to be used by any professional, There is an template SQL database provided. 
 
 ## How to install Zmanager 
 
