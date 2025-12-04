@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-ztpq!0if9_w9d12p)m$=9r5)xz9t$$t%@bpuk!&xzkjg$1y+ih
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '192.168.1.69' #Change this value to your server adress
+]
 
 
 # Application definition
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'zoo',
 ]
 
 MIDDLEWARE = [
@@ -50,8 +53,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'zmanager_project.urls'
-
-TEMPLATES = [0]['DIRS'] = [BASE_DIR / "static"]
 
 WSGI_APPLICATION = 'zmanager_project.wsgi.application'
 
@@ -69,6 +70,23 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': ['zoo/static'], 
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
 
 
 # Password validation
